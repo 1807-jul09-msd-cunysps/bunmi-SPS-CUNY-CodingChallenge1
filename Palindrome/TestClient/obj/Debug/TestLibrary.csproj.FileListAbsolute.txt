@@ -1,0 +1,10 @@
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\bin\Debug\TestClient.exe.config
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\bin\Debug\TestClient.exe
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\bin\Debug\TestClient.pdb
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\bin\Debug\Person.dll
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\bin\Debug\Person.pdb
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\obj\Debug\TestLibrary.csprojAssemblyReference.cache
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\obj\Debug\TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\obj\Debug\TestLibrary.csproj.CopyComplete
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\obj\Debug\TestClient.exe
+C:\Users\Bunmi\Source\Repos\bunmi-SPS-CUNY-CodingChallenge1\Palindrome\TestClient\obj\Debug\TestClient.pdb
