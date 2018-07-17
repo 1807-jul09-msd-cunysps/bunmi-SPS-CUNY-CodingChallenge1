@@ -26,12 +26,23 @@ namespace TestClient
         }
             public static bool IsPalindrome(string myStr)
             {
+                // converting string to array
                 char[] arr = myStr.ToCharArray();
-                Array.Reverse(arr);
                 
+                // Reversing string
+                Array.Reverse(arr);
+
+                //removing spacing from reversed string
+                //myStr = ("", arr);
+
+                //changing to lowercase
+                myStr = myStr.ToLower();
+
+                Console.WriteLine(myStr);
+
                 string backwards = new string(arr);
                 
-            return myStr == backwards;
+                return myStr == backwards;
             }
     }   
 }
