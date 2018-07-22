@@ -10,37 +10,45 @@ namespace TestClient
     {
         public static void Main(string[] args)
         {
-            string str = string.Empty;
+            string myStr = string.Empty;
 
-            str = "A nut for a jar of tuna";
-            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
+            myStr = "A nut for a jar of tuna";
+            Console.WriteLine("Is {0} palindrome? {1}", myStr, IsPalindrome(myStr));
 
-            str = "borrow or rob";
-            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
+            myStr = "borrow or rob";
+            Console.WriteLine("Is {0} palindrome? {1}", myStr, IsPalindrome(myStr));
 
-            str = "343";
-            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
+            myStr = "343";
+            Console.WriteLine("Is {0} palindrome? {1}", myStr, IsPalindrome(myStr));
 
             Console.ReadLine();
 
         }
-        public static bool palindromeTest(string str)
+        public static bool IsPalindrome(string myStr)
         {
-            string myStr = str.ToString();
-            myStr.Replace(" ", "");
-            myStr.ToLower();
 
-            string myTest = str.ToString();
-            myTest.Replace(" ", "");
-            myTest.ToLower();
+            myStr = myStr.Replace(" ", "");
+            myStr = myStr.ToLower();
+            char[] arr = myStr.ToCharArray();
 
-            if (myTest == myStr)
+            Array.Reverse(arr);
+            String strRev = new String(arr);
+            strRev = strRev.Replace(" ", "");
+            strRev = strRev.ToLower();
+            //Console.WriteLine(myStr);
+            // Console.WriteLine(strRev);
+            // Console.ReadLine();
+
+            for (int i = arr.Length - 1; i >= 0; i--)
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                if (myStr == strRev)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
     }
