@@ -10,39 +10,38 @@ namespace TestClient
     {
         public static void Main(string[] args)
         {
-            string myStr = string.Empty;
+            string str = string.Empty;
 
-            myStr = "A nut for a jar of tuna";
-            Console.WriteLine("Is Palindrome {0} {1}", myStr, IsPalindrome(myStr));
+            str = "A nut for a jar of tuna";
+            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
 
-            myStr = "borrow or rob";
-            Console.WriteLine("Is Palindrome {0} {1}", myStr, IsPalindrome(myStr));
+            str = "borrow or rob";
+            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
 
-            myStr = "343";
-            Console.WriteLine("Is Palindrome {0} {1}", myStr, IsPalindrome(myStr));
+            str = "343";
+            Console.WriteLine("Is {0} palindrome? {1}", str, palindromeTest(str));
 
             Console.ReadLine();
 
         }
-            public static bool IsPalindrome(string myStr)
+        public static bool palindromeTest(string str)
+        {
+            string myStr = str.ToString();
+            myStr.Replace(" ", "");
+            myStr.ToLower();
+
+            string myTest = str.ToString();
+            myTest.Replace(" ", "");
+            myTest.ToLower();
+
+            if (myTest == myStr)
             {
-                // converting string to array
-                char[] arr = myStr.ToCharArray();
-                
-                // Reversing string
-                Array.Reverse(arr);
-
-                //removing spacing from reversed string
-                //myStr = ("", arr);
-
-                //changing to lowercase
-                myStr = myStr.ToLower();
-
-                Console.WriteLine(myStr);
-
-                string backwards = new string(arr);
-                
-                return myStr == backwards;
+                return true;
             }
-    }   
+            else
+            {
+                return false;
+            }
+        }
+    }
 }
