@@ -27,21 +27,14 @@ namespace TestClient
         public static bool IsPalindrome(string myStr)
         {
 
-            myStr = myStr.Replace(" ", "");
-            myStr = myStr.ToLower();
-            char[] arr = myStr.ToCharArray();
+            string  s = myStr.Replace(" ", "");
+            s = s.ToLower();
+            char[] arr = s.ToCharArray();
 
             Array.Reverse(arr);
             String strRev = new String(arr);
-            strRev = strRev.Replace(" ", "");
-            strRev = strRev.ToLower();
-            //Console.WriteLine(myStr);
-            // Console.WriteLine(strRev);
-            // Console.ReadLine();
-
-            for (int i = arr.Length - 1; i >= 0; i--)
             {
-                if (myStr == strRev)
+                if (s == strRev)
                 {
                     return true;
                 }
